@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style media="screen">
+           .container{
+               width: 50%;
+               height: 200px;
+               overflow: auto;
+               margin-left: :0 auto;
+           } 
+           .static{position: static; border: 2px solid green}
+           .relative{
+               position: relative;
+               border: 2px solid red;
+               left: 20px; 
+               bottom: 0;
+           }
+           .absolute{position: absolute; border: 2px solid blue; left: 20px; bottom: 40px;}
+           .fixed{position: fixed; border: 2px solid black; bottom: 0; right: 0;}
+           .sticky{
+               position: sticky;
+               border: 2px solid yellow;
+               top: 0;
+               left: 20px;
+               background: darkblue;
+               color: white;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <p class="sticky">
+                Ini adalah contoh dari posisi sticky
+            </p>
+            <p class="static">
+                <b>Ini adalah contoh dari position static</b> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ab, 
+                rem soluta necessitatibus nulla esse dolorum porro eligendi consequuntur 
+                delectus autem hic. Fugiat optio alias magnam provident quis sit corrupti.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam velit 
+                eius culpa perferendis facere excepturi impedit est, quo provident nam dolores 
+                at fugit minus doloremque et sit distinctio? Reiciendis, placeat.
+            </p>
+            <p class="relative">
+                <b>Ini adalah contoh dari position relative</b> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit recusandae similique quis quaerat, magnam nulla eveniet 
+                quasi esse doloremque modi, enim eligendi consectetur facere, ipsam 
+                qui sequi nam unde placeat. Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Est rem voluptatum cum eaque tempore eveniet quod 
+                velit nam? Velit aliquid tempore at hic! Alias itaque accusamus atque! 
+                Temporibus, tempora asperiores!
+            </p>
+            <p class="absolute">
+                <b>Ini adalah contoh dari position absolute</b> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, 
+                officia ea inventore ipsam impedit cum ullam molestias repellat eum.
+                Commodi ea libero porro iusto aspernatur nisi corporis dolore, aperiam 
+                nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione 
+                obcaecati modi ut laboriosam consequuntur odit, quaerat, iusto incidunt rem, 
+                nesciunt est voluptates possimus perspiciatis vero. Cum porro natus modi aperiam.
+            </p>
+            <p class="fixed">
+                Ini adalah contoh dari position fixed
+            </p>
+        </div>
+    </body>
+</html>
