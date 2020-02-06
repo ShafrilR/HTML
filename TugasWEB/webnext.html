@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kawah Ijen</title>
+    <style media="screen">
+        *{
+            box-sizing:border-box;
+        }   
+        [class*="col-"] {float: left; padding: 15px;}
+        [class*="col-"] {width: 100%;}
+
+        @media only screen and (min-width: 600px){
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+        }
+        @media only screen and (min-width: 768px){
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+        @media only screen and (min-width: 150px){
+            .col-a-1 {width: 8.33%;}
+            .col-a-2 {width: 16.66%;}
+            .col-a-3 {width: 25%;}
+            .col-a-4 {width: 33.33%;}
+            .col-a-5 {width: 41.66%;}
+            .col-a-6 {width: 50%;}
+            .col-a-7 {width: 58.33%;}
+            .col-a-8 {width: 66.66%;}
+            .col-a-9 {width: 75%;}
+            .col-a-10 {width: 83.33%;}
+            .col-a-11 {width: 91.66%;}
+            .col-a-12 {width: 100%;}
+        }
+        .container{
+            width: 100%;
+            margin: auto;
+        }
+        .judul{
+            font-family:monospace;
+            font-style: oblique;
+            font-size: 80px;
+            color: white;
+            height: 200px;
+        }
+        body{
+            background-image: url(./gambar/back1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .image{
+            width: 200px;
+            height: 200px;
+            border-radius: 30%;
+            margin: 0 auto;
+            border: 12px double white;
+            color:  white;
+            background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15));
+        }
+        .textimage{
+            color: white;
+            font-family:arial;
+            font-style: oblique;
+        }
+        .box{
+            text-align: center;
+        }
+        .footer{
+            color:white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .textbox{
+            text-align: justify;
+            font-family: arial;
+            color: white;
+            border: 2px solid white;
+            margin: 15px;
+            margin-left: 65px;
+            margin-right: 70px;
+        }
+        .textlegend{
+            font-size: 30px;
+            font-style: italic;
+        }
+        .menu{margin: 0; width: 100%; position:sticky;}
+        ul.horizontal{
+            list-style-type: none;
+            padding-top: 0px;
+            margin: 0;
+            overflow: hidden;
+        }
+        ul.horizontal li{float:left}
+        ul.horizontal li a{
+            display: block;
+            text-decoration: none;
+            color:white;
+            padding: 15px;
+            text-align: center;
+        }
+        ul.horizontal li a:hover{background:linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15))}
+        .textmenu{
+            color: white;
+            font-family: arial;
+        }
+        .imagelogo{
+            width: 50px;
+            height: 48px;
+            margin-top: 5px;
+            margin-right: 50px;
+        }
+        .trans{
+            transition: all .8s ease;
+        }
+        .trans:hover{
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="col-6 col-s-6 col-a-6">
+        <ul class="horizontal menu textmenu" align="left">
+            <li><a href="webin.html">Home</a></li>
+            <li><a href="#A1">Kawah Ijen</a></li>
+            <li><a href="#A2">Blue Fire</a></li>
+            <li><a href="#A3">Belerang</a></li>
+        </ul>
+    </div>
+    <div class="col-6 col-s-6 col-a-6" align="right">
+        <img src="gambar/logo.png" class="imagelogo">
+    </div> 
+    <div class="container col-12 col-s-12" align="center">
+        <h1 class="judul" align="center">KAWAH IJEN</h1>
+    </div>
+    <div class="box col-4 col-s-6">
+        <img src="gambar/kawah.jpg" class="image trans">
+        <h2 class="textimage">Kawah</h2>
+    </div>
+    <div class="box col-4 col-s-6">
+        <img src="gambar/bluefire.jpg" class="image trans">
+        <h2 class="textimage">Blue Fire</h2>
+    </div>
+    <div class="box col-4 col-s-12">
+        <img src="gambar/belerang.jpg" class="image trans">
+        <h2 class="textimage">Belerang</h2>
+    </div>
+    <fieldset class="textbox" align="center">
+        <legend class="textlegend" align="center">Gunung Ijen</legend>
+        <p>
+            Gunung Ijen adalah sebuah gunung berapi yang terletak di perbatasan 
+            antara Kabupaten Banyuwangi dan Kabupaten Bondowoso, Jawa Timur, 
+            Indonesia. Gunung ini memiliki ketinggian 2.386 mdpl dan terletak 
+            berdampingan dengan Gunung Marapi. Gunung Ijen terakhir meletus pada 
+            tahun 1999. Salah satu fenomena alam yang paling terkenal dari Gunung 
+            Ijen adalah blue fire di dalam kawah yang terletak di puncaknya. 
+            Pendakian gunung ini bisa dimulai dari dua tempat. Pendaki bisa 
+            berangkat dari Banyuwangi ataupun dari Bondowoso. Untuk mencapai kawah 
+            Gunung Ijen di Banyuwangi, bisa menggunakan kereta api ekonomi dengan 
+            tujuan Banyuwangi dan turun di Stasiun Karangasem kemudian naik ojek 
+            dengan tujuan Kecamatan Licin dan Desa Banyusari. Dari Banyusari, perjalanan 
+            dilanjutkan menuju Paltuding dengan menumpang truk pengangkut belerang atau 
+            menggunakan bus dan turun di Banyuwangi kota kemudian naik ojek bisa langsung ke 
+            Paltuding atau ke Desa Banyusari juga bisa namun dengan menggunakan bus tarif yang 
+            dikeluarkan akan lebih mahal. Pintu gerbang utama ke Cagar Alam Taman Wisata 
+            Kawah Ijen terletak di Paltuding, yang juga merupakan Pos PHPA (Perlindungan Hutan 
+            dan Pelestarian Alam). Alternatif rute adalah Bondowoso - Wonosari - Tapen - Sempol - 
+            Paltuding. Fasilitas lain yang dapat dinikmati oleh pengunjung antara lain pondok wisata 
+            dan warung yang menjual keperluan pendakian untuk menyaksikan keindahan kawah Ijen. Dari 
+            Paltuding berjalan kaki dengan jarak sekitar 3 km. Lintasan awal sejauh 2 KM cukup berat 
+            karena menanjak. Sebagian besar jalur adalah dengan kemiringan 25-35 derajat. Selain menanjak, 
+            struktur tanahnya juga berpasir sehingga menambah semakin berat langkah kaki karena harus 
+            menahan berat badan agar tidak merosot ke belakang. Setelah beristirahat di Warung Pos Bundar 
+            (pos yang unik karena memiliki bentuk lingkaran), jalur selanjutnya naik agak curam dan licin, 
+            dilanjutkan 1 KM terakhir relatif landai, tetapi wisatawan / pendaki disuguhi pemandangan deretan 
+            pegunungan yang sangat indah. Untuk turun menuju ke kawah harus melintasi medan berbatu-batu sejauh 
+            800 meter dengan kondisi yang terjal hingga kemiringan 45 derajat.
+        </p>
+    </fieldset>
+    <br id="A1">
+    <fieldset class="textbox">
+        <legend class="textlegend" align="center">Kawah Ijen</legend>
+        <p>
+            Kawah Ijen adalah sebuah danau kawah yang bersifat asam yang berada di puncak Gunung Ijen dengan 
+            kedalaman danau 200 meter dan luas kawah mencapai 5.466 Hektar. Danau kawah Ijen dikenal merupakan 
+            danau air asam kuat terbesar di dunia. Kawah Ijen berada dalam wilayah Cagar Alam Taman Wisata 
+            Ijen Kabupaten Bondowoso dan Kabupaten Banyuwangi, Jawa Timur. Fenomena eternal blue fire atau api 
+            biru abadi berada di dalam kawah Ijen, dan pemandangan alami ini hanya terjadi di dua tempat di dunia 
+            yaitu Islandia dan Ijen. Blue fire hanya dapat dilihat oleh mata manusia saat tidak ada cahaya, karenanya 
+            waktu ideal untuk melihatnya adalah jam 2 hingga jam 4 dinihari, karena pendakian Gunung Ijen baru mulai 
+            dibuka jam 2 dinihari. Dari Kawah Ijen, kita dapat melihat pemandangan gunung lain yang ada di kompleks 
+            Pegunungan Ijen, di antaranya adalah puncak Gunung Marapi yang berada di timur Kawah Ijen, Gunung Raung, 
+            Gunung Suket, dan Gunung Rante. Kawasan Ijen seringkali ditutup karena kandungan belerang yang terlalu 
+            tinggi yang dapat membahayakan para traveler maupun penambang di kawasan tersebut. Kawasan Ijen dapat 
+            sewaktu-waktu ditutup ketika kamu bahkan sudah sampai di sana. Para pengelola benar-benar memperhatikan 
+            keselamatan pengunjung dan penambang yang melakukan aktivitas di sana. Ketika kamu sudah memasuki area 
+            kawah pun, asap belerang dengan kadar tinggi bisa-bisa menghampirimu. Jika tidak kuat, baunya yang menyengat 
+            bukan hanya membuatmu batuk-batuk dan pusing, melainkan juga pingsan bahkan meninggal dunia. Terlepas dari 
+            problematika yang setiap hari dihadapi para enambang di kawasan Ijen, bagi kamu yang ingin traveling ke sana, 
+            maka kamu akan menemukan pemandangan spektakuler kombinasi antara danau kawah ijen yang berwarna tosca, panjangnya 
+            jalur pendakian, dan pemandangan asap belerang yang selalu mengepul ke langit. Foto-foto dengan latar belakang 
+            kawah ijen dan asap belerangnya sangat instagramable dan menjadi menu wajib yang harus kamu lakukan jika berkunjung ke sana.
+        </p>
+    </fieldset>
+    <br id="A2">
+    <fieldset class="textbox">
+        <legend class="textlegend" align="center">Blue Fire</legend>
+        <p>
+            Meski tidak setenar Gunung Rinjani, Semeru, atau Bromo, Gunung Ijen terasa istimewa karena memiliki fenomena langka 
+            berupa Blue Fire yang hanya ada dua di dunia dan menjadi satu-satunya di Indonesia. Memiliki kawah terbesar di antara 
+            gunung api di Pulau Jawa, gunung yang masih berstatus aktif ini terakhir kali erupsi pada 1936. Blue Fire sendiri 
+            merupakan reaksi dari gas bumi ketika bertemu oksigen pada tingkatan tertentu. Hasil dari reaksi ini terlihat seperti 
+            api yang berwarna biru. Karena keindahannya, Gunung Ijen menjadi salah satu destinasi yang rajin dikunjungi oleh wisatawan, 
+            baik dalam maupun luar negeri. Menahan kantuk mendaki gunung yang memiliki ketinggian 2.443 mdpl dan kemiringan 40 derajat, 
+            selama dua hingga tiga jam dirasa bukan masalah. Hal ini demi menyaksikan fenomena indah tersebut, karena momen Blue Fire 
+            hanya ada pada pukul 02.00-04.00 WIB. Fenomena ini kemungkinan sudah terjadi sejak ratusan atau ribuan tahun lalu. Hanya saja, 
+            Blue Fire baru ditemukan pada 1950 oleh penambang yang bekerja di gunung ini dan baru diekspose pada 2014 lalu. Kobaran api 
+            berwarna biru seperti api kompor di antara kelam yang muncul dari kawah gunung terlihat sangat indah. Tak ayal, Blue Fire menjadi 
+            fenomena alam yang menarik perhatian traveler dunia. Selain di Banyuwangi, fenomena ini terjadi juga terjadi di Islandia.
+        </p>
+    </fieldset>
+    <br id="A3">
+    <fieldset class="textbox">
+        <legend class="textlegend" align="center">Belerang</legend>
+        <p>
+            Belerang atau sulfur adalah unsur kimia dalam tabel periodik yang memiliki lambang S dan nomor atom 16. Belerang merupakan unsur 
+            non-logam yang tidak berasa. Belerang, dalam bentuk aslinya, adalah sebuah zat padat kristalin kuning. Di alam, belerang dapat 
+            ditemukan sebagai unsur murni atau sebagai mineral-mineral sulfida dan sulfat. Belerang adalah unsur penting untuk kehidupan dan 
+            ditemukan dalam 2 asam amino. Salah satu contoh penggunaan umum belerang adalah dalam pupuk. Selain itu, belerang juga digunakan 
+            dalam bubuk mesiu, korek api, insektisida, dan fungisida. Sejak dini hari, para penambang belerang mulai mendaki ke puncak Gunung 
+            Ijen yang memiliki ketinggian 2.443 meter, dengan menggunakan senter di kepala, jaket tipis dan sarung tangan. Perjalanan ke puncak 
+            Gunung Ijen memakan waktu sekitar dua jam. Setelah sampai puncak para penambang menuruni lereng yang terjal untuk menuju kawah.
+            Di sekitar kawah Gunung Ijen itulah, mereka mengambil belerang. Sambil memanggul keranjang bambu penuh belerang dengan berat sekitar 
+            70 kg, para penambang pun kembali meniti jalur berbatu ke puncak. Sesekali langkah mereka terhenti untuk beristirahat. Penambang lain 
+            yang telah bekerja selama lebih dari 10 tahun, salah satu penambang mengaku memilih menjadi penambang karena bisa langsung mendapatkan uang.
+            "Ya lumayan dapatnya, sekitar Rp200 ribu kadang Rp150 ribu, dengan membawa 80 atau 85 kg belerang, tergantung kesehatan. Kalau sehat yang 
+            bisa bawa banyak, sekali nimbang langsung dapat uang," jelas Muryanto yang berusia 40 tahun.
+        </p>
+    </fieldset>
+    <br>
+    <div class="footer" align="center">
+        &copy; Copyright by 
+         <a href="https://www.instagram.com/shafrilrzqn_/?hl=id" target="blank" class="footer">Shafril</a>
+    </div>
+    <br>
+    <br>
+</body>
+</html>
