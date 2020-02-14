@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adiwiyata | Lingkungan Hidup</title>
+    <link rel="stylesheet" href="../Bootstrap 4/assets/css/bootstrap.min.css">
+    <script src="../Bootstrap 4/assets/js/jquery.min.js"></script>
+    <script src="../Bootstrap 4/assets/js/popper.min.js"></script>
+    <script src="../Bootstrap 4/assets/js/bootstrap.js"></script>
+    <style media="screen">
+        *{
+            box-sizing:border-box;
+        }   
+        [class*="col-"] {float: left; padding: 15px;}
+        [class*="col-"] {width: 100%;}
+        .cover{
+            background: url("gambar/bgd.png");
+            background-size: cover;
+            height: 89vh;
+        }
+        @media only screen and (max-width: 560px) {
+            .judul{
+                display: none;
+            }
+        }
+        @media only screen and (min-width: 561px) {
+            .judul{
+                color: white;
+                font-size: 70px;
+                font-family:cursive;
+                font-variant: initial;
+                margin-top: 265px;
+                text-shadow: 5px 5px 5px black;
+            }
+        }
+        
+        .logo{
+            margin-top: 170px;
+            width: 350px;
+        }
+        .title{
+            width: 85%;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .toga{
+            width: 85%;
+            margin: 0 auto;
+        }
+        .box{
+            text-align: center;
+        }
+        .gbr{
+            width: 200px;
+            height: 200px;
+            border-radius: 45%;
+            margin: 0 auto;
+            border: 20px double green;
+        }
+        .textimage{
+            margin-top: 20px;
+            color: black;
+            font-family:arial;
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-success navbar-dark sticky-top" id="Home">
+        <a href="https://id.wikipedia.org/wiki/Adiwiyata" target="blank">
+            <img src="gambar/adw.png" width="80">
+        </a>
+
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+            <span class="navbar navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="https://www.instagram.com/shafrilrzqn_/?hl=id" target="blank" class="nav-link">Profil</a></li>
+                <li class="nav-item"><a href="https://id.wikipedia.org/wiki/Lingkungan" target="blank" class="nav-link">Lingkungan</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="kontak" data-toggle="dropdown">Materi</a>
+                    <div class="dropdown-menu">
+                        <a href="#3R" class="dropdown-item">3R</a>
+                        <a href="#Toga" class="dropdown-item">Toga</a>
+                        <a href="#tgl" class="dropdown-item">Hari Besar</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid cover">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 text-center">
+                <img src="gambar/adw.png" class="logo">
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <h1 class="judul text-left">Lingkungan Hidup</h1>
+            </div>
+        </div>
+    </div>
+    <br id="3R">
+    <br>
+    <br>
+    <div class="title container">
+        <ul>
+            <li>
+                <h1>3R</h1>
+                <p>(Reduce, Reuse, Recycle)</p>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="card col-sm-4">
+                <!-- card header -->
+                <div class="card-header bg-success text-white text-center">
+                    REDUCE
+                </div>
+                <!-- Card body -->
+                <div class="bard-body">
+                    Reduce berarti kita mengurangi penggunaan bahan-bahan yang bisa merusak lingkungan. 
+                    Reduce juga berarti mengurangi belanja barang-barang yang anda tidak “terlalu” butuhkan 
+                    seperti baju baru, aksesoris tambahan atau apa pun yang intinya adalah pengurangan kebutuhan. 
+                    Kurangi juga penggunaan kertas tissue dengan sapu tangan, kurangi penggunaan kertas di kantor 
+                    dengan print preview sebelum mencetak agar tidak salah, baca koran online, dan lainnya.
+                    Contoh kegiatan reduce sehari-hari:
+
+                    1. Memilih produk dengan kemasan yang dapat didaur ulang.
+
+                    2. Hindari memakai dan membeli produk yang menghasilkan sampah dalam jumlah besar.
+
+                    3. Menggunakan produk yang dapat diisi ulang (refill). Misalnya alat tulis yang bisa diisi ulang kembali).
+                </div>
+                <!-- card footer -->
+                <div class="card-header bg-success text-white text-center">
+                    - - - - - - - - - - 
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <!-- card header -->
+                <div class="card-header bg-success text-white text-center">
+                    REUSE
+                </div>
+                <!-- Card body -->
+                <div class="bard-body">
+                    Reuse sendiri berarti pemakaian kembali seperti contohnya memberikan baju-baju bekas anda ke 
+                    yatim piatu. Tapi yang paling dekat adalah memberikan baju yang kekecilan pada adik atau saudara 
+                    anda, selain itu baju-baju bayi yang hanya beberapa bulan dipakai masih bagus dan bisa diberikan 
+                    pada saudara yang membutuhkan. Contoh kegiatan reuse sehari-hari:
+
+                    1. Memilih wadah, kantong atau benda yang dapat digunakan beberapa kali atau berulang-ulang. Misalnya, 
+                    menggunakan sapu tangan dari pada menggunakan tissu, menggunakan tas belanja dari kain dari pada 
+                    menggunakan kantong plastik.
+                    
+                    2. Menggunakan alat-alat penyimpan elektronik yang dapat dihapus dan ditulis kembali.
+                    3. Menggunakan sisi kertas yang masih kosong untuk menulis.
+                </div>
+                <!-- card footer -->
+                <div class="card-header bg-success text-white text-center">
+                    - - - - - - - - - - 
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <!-- card header -->
+                <div class="card-header bg-success text-white text-center">
+                    RECYCLE 
+                </div>
+                <!-- Card body -->
+                <div class="bard-body">
+                    Recycle adalah mendaur ulang barang. Paling mudah adalah mendaur ulang sampah organik di rumah 
+                    anda, menggunakan bekas botol plastik air minum atau apapun sebagai pot tanaman, sampai mendaur 
+                    ulang kertas bekas untuk menjadi kertas kembali. Daur ulang secara besar-besaran belum menjadi 
+                    kebiasaan di Indonesia. Tempat sampah yang membedakan antara organik dan non-organik saja tidak 
+                    jalan. Malah akhirnya lebih banyak gerilyawan lingkungan yang melakukan daur ulang secara kreatif 
+                    dan menularkannya pada banyak orang dibandingkan pemerintah. 
+                    Contoh kegiatan recycle sehari-hari:
+
+                    1. Memilih produk dan kemasan yang dapat didaur ulang dan mudah terurai.
+
+                    2. Mengolah sampah kertas menjadi kertas atau karton kembali.
+                </div>
+                <!-- card footer -->
+                <div class="card-header bg-success text-white text-center">
+                    - - - - - - - - - - 
+                </div>
+            </div>
+        </div>
+    </div>
+    <br id="Toga">
+    <br>
+    <div class="title container">
+        <ul>
+            <li>
+                <h1>TOGA</h1>
+                <p>(Tanaman Obat Keluarga)</p>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div class="toga row">
+        <div class="box col-lg-4 col-sm-6">
+            <img src="gambar/daun_sirih.jpg" class="gbr">
+            <h2 class="textimage">Daun Sirih Merah</h2>
+            <p>
+                Sudah tak diragukan lagi, daun sirih merah memiliki banyak 
+                khasiat dalam penyembuhan penyakit. Kandungan Polevenolad dan 
+                Flavonoid yang dimilikinya dapat dijadikan sebagai penyembuhan 
+                kanker, antioksidan, antiseptik, sampai antiiflamasi. Tak hanya itu, 
+                uegenol yang terkandung di dalamnya dapat digunakan untuk meredakan 
+                rasa sakit. Karvakrol yang ada di dalamnya bisa mengatasi bau mulut 
+                dan keputihan.
+            </p>
+        </div>
+        <div class="box col-lg-4 col-sm-6">
+            <img src="gambar/kencur.jfif" class="gbr">
+            <h2 class="textimage">Kencur</h2>
+            <p>
+                Tanaman toga yang bernama kencur ini mengandung banyak minyak astiri 
+                dan antioksidan. Kencur termasuk tanaman yang cepat subur dan mudah perawatannya.
+                 Sebagai jamu-jamuan, kencur dapat diramu menjadi jamu untuk mengobati flu, kembung, 
+                 batuk, dan mulas. Kandungan yang dimiliki kencur mampu meredakan radang lambung, keseleo, 
+                 sakit kepala, diare, dan bahkan menyehatkan organ ginjal.
+            </p>
+        </div>
+        <div class="box col-lg-4 col-sm-12">
+            <img src="gambar/rosella.png" class="gbr">
+            <h2 class="textimage">Bunga Rosella</h2>
+            <p>
+                Bunga rosella adalah tanaman obat keluarga yang bukan hanya dapat diolah 
+                menjadi obat melainkan juga teh. Kandungan vitamin C dalam bunga rosella 
+                mampu meningkatkan imunitas. Oleh sebab itu, bunga rosella dapat dijadikan 
+                pereda batuk, flu, demam, ataupun nyeri haid. Keistimewaan lainnya adalah 
+                flavonoidnya yang bersifat antidepresan, sehingga bisa meredakan rasa cemas 
+                dan membuat pengonsumsinya rileks. Khasiat lain yang dimiliki bunga rosella 
+                diantaranya adalah melangsingkan badan, menyehatkan organ hati, dan mencegah 
+                tumor dan kanker.
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="carousel slide" data-ride="carousel" id="slide">
+            <!-- indikator slide -->
+            <ul class="carousel-indicators">
+                <li data-target="#slide" data-slide-to="0" class="active"></li>
+                <!-- class active berati elemen tersebut yang pertama kali ditampilkan
+                saat load halaman -->
+                <li data-target="#slide" data-slide-to="1"></li>
+                <li data-target="#slide" data-slide-to="2"></li>
+            </ul>
+
+            <!-- gambar slide -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="gambar/773426.jpg" width="100%" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="gambar/452582.jpg" width="100%" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="gambar/forst.jpg" width="100%" height="500">
+                </div>
+            </div>
+
+           <!-- navigasi slide -->
+           <a href="#slide" data-slide="prev" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#slide" data-slide="next" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="title container" id="tgl">
+        <ul>
+            <li>
+                <h1>Hari Hari Besar Lingkungan Hidup</h1>
+                <p>(Tanggal dan Peringatan)</p>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Peringatan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10 Januari</td>
+                    <td>Hari Gerakan Sejuta Pohon</td>
+                </tr>
+                <tr>
+                    <td>21 Februari</td>
+                    <td>Hari Peduli Sampah Nasional</td>
+                </tr>
+                <tr>
+                    <td>21 Maret</td>
+                    <td>Hari Kehutanan Sedunia</td>
+                </tr>
+                <tr>
+                    <td>21 Maret</td>
+                    <td>Hari Kehutanan Sedunia</td>
+                </tr>
+                <tr>
+                    <td>5 Juni</td>
+                    <td>Hari Lingkungan Hidup Sedunia</td>
+                </tr>
+            </tbody>
+        </table>
+    </div> 
+    <br>
+    <br> 
+</body>
+</html>
