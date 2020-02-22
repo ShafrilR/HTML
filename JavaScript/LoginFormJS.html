@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script type="text/javascript">
+        Login = () =>{
+            //memubuat tipe data
+            let user = document.getElementById('user').value;
+            let pw = document.getElementById('password').value;
+
+            // 
+            if(user == 'admin' && pw == 'admin'){
+                let element = document.getElementById('pesan');
+                element.className = ""
+                element.classList.add("alert");
+                element.classList.add("alert-success");
+                element.innerText += "Login Berhasil";
+            }else{
+                let element = document.getElementById('pesan');
+                element.className = ""
+                element.classList.add("alert");
+                element.classList.add("alert-danger");
+                element.innerText += "Username atau Password Salah!";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="card col-sm-12">
+                <div class="card-header bg-primary text-white"><h4>Login Form</h4></div>
+                <div class="card-body">
+                    <div id="pesan"></div>
+                    Username
+                    <input type="text" id="user" class="form-control">
+                    Password
+                    <input type="password" id="password" class="form-control">
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary btn-block" onclick=Login();>
+                        LOGIN
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

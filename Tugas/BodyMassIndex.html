@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script type="text/javascript">
+        count = () =>{
+            // mengambil nilai elemen dari elemen (get value)
+            let berat = document.getElementById('berat').value;
+            let tinggi = document.getElementById('tinggi').value;
+            let hasil = berat / (tinggi * tinggi);
+
+            // menentukan nilai pada elemen (set value)
+            document.getElementById('hasil').value = hasil; 
+
+            //penentuan hasil
+            if(hasil < 18.5){
+                let element = document.getElementById('hasil').value = "Anda Kurus";
+            }else if(hasil >= 18.5 && hasil < 22.9){
+                let element = document.getElementById('hasil').value = "Anda Normal";
+            }
+            else if(hasil >= 23 && hasil < 24.9){
+                let element = document.getElementById('hasil').value = "Anda Overweight";
+            }else{
+                let element = document.getElementById('hasil').value = "Anda OBESITAS";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="card col-sm-4">
+            <div class="card-header bg-warning text-black" align="center">
+                <h4>Body Mask Index</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-4 my-2">
+                        Berat (Kg)
+                    </div>
+                    <div class="col-sm-8 my-2">
+                        <input type="number" id="berat" class="form-control">
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        Tinggi (M)
+                    </div>
+                    <div class="col-sm-8 my-3">
+                        <input type="number" id="tinggi" class="form-control">
+                    </div>
+                    <button type="button" class="btn btn-warning btn-block" onclick="count()">
+                        HITUNG
+                    </button>
+                    <div class="col-sm-4 my-3">
+                        Hasil
+                    </div>
+                    <div class="col-sm-8 my-3">
+                        <input type="text" id="hasil" class="form-control" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

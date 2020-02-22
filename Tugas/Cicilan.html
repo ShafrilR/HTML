@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">=
+    <title>Cicilan</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script type="text/javascript">
+        count = () =>{
+            // mengambil nilai elemen dari elemen (get value)
+            let nominal = document.getElementById('nominal').value;
+            let periode = document.getElementById('periode').value;
+            let bunga = document.getElementById('bunga').value;
+            let pbulan = nominal / periode;
+            let flower = nominal / 100 * bunga;
+            let cicilan = pbulan + flower;
+
+            // menentukan nilai pada elemen (set value)
+            document.getElementById('cicilan').value = "Rp " + cicilan; 
+
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="card col-sm-5">
+            <div class="card-header bg-danger text-white" align="center">
+                <h4>Cicilan</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-4 my-2">
+                        Nominal
+                    </div>
+                    <div class="col-sm-8 my-2">
+                        <input type="number" id="nominal" class="form-control">
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        Periode
+                    </div>
+                    <div class="col-sm-8 my-2">
+                        <select class="form-control" id="periode">
+                            <option value="12">12</option>
+                            <option value="24">24</option>
+                            <option value="36">36</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-4 my-1">
+                        Bunga (%) per tahun
+                    </div>
+                    <div class="col-sm-8 my-3">
+                        <input type="number" id="bunga" class="form-control">
+                    </div>
+                    <button type="button" class="btn btn-danger btn-block" onclick="count()">
+                        HITUNG
+                    </button>
+                    <div class="col-sm-4 my-3">
+                        Cicilan
+                    </div>
+                    <div class="col-sm-8 my-3">
+                        <input type="text" id="cicilan" class="form-control" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
