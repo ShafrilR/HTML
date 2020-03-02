@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">=
+    <title>Konversi Bilangan</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script type="text/javascript">
+        konversi = () =>{
+            let basis = document.getElementById('basis').value;
+            let input = Number(document.getElementById('input').value);
+
+            let convert = (parseInt(input,8).toString(basis));
+
+            document.getElementById('hasil').value = convert;
+
+        }
+        key = (event) =>{
+            if(!(event.keyCode >= 48 && event.keyCode <= 55)){
+                let element = document.getElementById('pesan');
+                element.className = ""
+                element.classList.add("alert");
+                element.classList.add("alert-danger");
+                element.innerText = "Bilangan Tidak Boleh Lebih dari 7";
+            }
+        }
+    </script>
+    <style>
+        .mrgn{
+            margin-top: 12%;
+            margin-left: 29%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-info navbar-dark fixed-top">
+        <a href="#">
+            <img src="../gambar/logo_putih.png" width="150">
+        </a>
+
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+            <span class="navbar navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="kontak" data-toggle="dropdown">Konversi Bilangan</a>
+                    <div class="dropdown-menu">
+                        <a href="KonversiDesimal.html" class="dropdown-item">Desimal</a>
+                        <a href="KonversiOktal.html" class="dropdown-item">Oktal</a>
+                        <a href="KonversiBiner.html" class="dropdown-item">Biner</a>
+                        <a href="KonversiHexa.html" class="dropdown-item">Hexa</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mrgn">
+        <div class="card text-center col-sm-6">
+            <div class="card-header bg-info text-white" align="center">
+                <h4>OKTAL</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <input type="number" id="input" class="form-control mb-2 text-center my-3" placeholder="Input Oktal" onkeyup="key(event)">
+                    <div id="pesan"></div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="basis">Konversi ke : </label>
+                        </div>
+                        <select class="custom-select" id="basis">
+                            <option value="2">Biner</option>
+                            <option value="10">Desimal</option>
+                            <option value="16">Hexa</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-info col-sm-12" onclick="konversi()">
+                        Convert
+                    </button>
+                    <input type="text" id="hasil" class="form-control mb-2 text-center my-3" readonly placeholder="HASIL">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

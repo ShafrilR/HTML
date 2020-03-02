@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi | Bola & Harga Akhir</title>    
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script type="text/javascript">
+        count = () =>{
+            let hd = Number(document.getElementById('hd').value);
+            let ppn = Number(document.getElementById('ppn').value);
+            let d = Number(document.getElementById('d').value);
+            let hasil_diskon = d/100 * hd;
+            let hasil_ppn = ppn/ 100 * hd;
+            let ha = (hd + hasil_ppn) - hasil_diskon;
+
+            document.getElementById('ha').value = "Rp " + ha;
+        }
+    </script>
+    <style>
+        .mrgn{
+            margin-top: 15%;
+            margin-left: 32%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark fixed-top">
+        <a href="#">
+            <img src="../gambar/logo_putih.png" width="150">
+        </a>
+
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+            <span class="navbar navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="/Bootstrap 4/Tugas/bola.html" class="nav-link">Bola</a></li>
+                <li class="nav-item"><a href="/Bootstrap 4/Tugas/hargaakhir.html" class="nav-link">Harga Akhir</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mrgn" id="bola">
+        <div class="card col-sm-5">
+            <div class="card-header bg-primary text-white" align="center">
+                <h4>Harga Akhir</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-4 my-2">
+                        Harga Dasar
+                    </div>
+                    <div class="col-sm-8 my-2">
+                        <input type="number" id="hd" class="form-control">
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        PPN     (%)
+                    </div>
+                    <div class="col-sm-8 my-2">
+                        <input type="number" id="ppn" class="form-control">
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        Diskon     (%)
+                    </div>
+                    <div class="col-sm-8 my-2">
+                        <input type="number" id="d" class="form-control">
+                    </div>
+                    <button type="button" class="btn btn-primary btn-block" onclick="count()">
+                        HITUNG
+                    </button>
+                    <div class="col-sm-4 my-3">
+                        Harga Akhir
+                    </div>
+                    <div class="col-sm-8 my-3">
+                        <input type="text" id="ha" class="form-control" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
